@@ -1,0 +1,26 @@
+import { action } from '@storybook/addon-actions';
+import { text } from '@storybook/addon-knobs';
+import { Button } from './Button';
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+
+<Meta title="MDX|Button" component={Button} />
+
+# Button
+
+<Props of={Button} />
+
+Simple:
+
+<Preview>
+  <Story name="Simple">
+    <Button onClick={() => alert("Clicked!")} title="Click me" />
+  </Story>
+</Preview>
+
+Emojis:
+
+<Preview>
+  <Story name="Emoji">
+    <Button onClick={() => alert("Clicked 😎")} title="😀 😎 👍 💯" />
+  </Story>
+</Preview>
